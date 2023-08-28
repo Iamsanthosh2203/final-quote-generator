@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <title>Poetic Quote Generator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&Balsamiq+Sans&family=Cinzel&family=Inconsolata&family=Sora&Lobster&family=Metal+Mania&family=MuseoModerno&family=Noto+Sans+HK&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="avatar"
+        src="avatar.jpg"
+        alt="A headshot of the quote author"
+      />
+      <input
+        style="margin-top: 10px; margin-bottom: 10px"
+        type="text"
+        id="myName"
+        placeholder="Enter Your Name"
+      />
+      <input
+        style="margin-top: 10px; margin-bottom: 10px"
+        type="text"
+        id="myHobbie"
+        placeholder="Enter Your Hobbie!!!"
+      />
+      <input
+        style="margin-top: 10px; margin-bottom: 10px"
+        type="text"
+        id="myPlace"
+        placeholder="Enter Your Fav Place"
+      />
+      <button id="submit">Click For A Magic</button>
+
+      <button
+        style="margin-top: 10px; margin-bottom: 10px"
+        id="reload"
+        class="none"
+      >
+        RESET
+      </button>
+
+      <div id="loader">
+        <img id="loader-img" src="loading.gif" alt="Loading spinner" />
+      </div>
+      <div class="quote-wrapper">
+        <h2 class="quote">
+          <span><span class="quote-span none"></span></span>
+        </h2>
+      </div>
+      <div class="name-wrapper">
+        <span><span class="name-span none"></span></span>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
